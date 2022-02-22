@@ -27,7 +27,7 @@ contract  SimpleStorage {
      return favoriteNumber;
  }
 
-// memory means thah only se mantiene during the function execution - storage persist afert function execution 
+// memory means that only is keeping during the function execution - storage persist after function execution 
 function addPerson( uint256 _favoriteNumber,string memory _name) public {
     people.push(People(_favoriteNumber,_name));
     nameToFavoriteNumber[_name] = _favoriteNumber;
